@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/blog.css" />
+
+    <title>Alex Steiner | Projects</title>
+</head>
+
+<body>
+
+    <!-- Nav bar-->
+    <nav class="nav-bar">
+        <div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!--Search Bar -->
+    <div class="search-bar"></div>
+
+    <!-- Blog -->
+    <div class="blogs">
+        <h1 class="title">Alex Steiner's Blog</h1>
+
+        <p>Welcome to my <strong>blog</strong>! Here, I will be sharing <strong>daily</strong> updates on my <strong>project</strong> and providing <strong>explanations</strong> on how it <strong>works</strong>. Follow along as I document my <strong>progress</strong> and share my <strong>insights</strong>.</p>
+
+        <% posts.forEach(post => { %>
+            <div class="blog">
+                <div class="text">
+                    <h3><%= post.title%></h3>
+                    <p><%=post.summary%></p>
+                    <a href=<%= `/blog/${post._id}` %>>Read Post ➝</a>
+                </div>
+    
+                <a href=<%= `/blog/${post._id}` %> style="color: transparent;">
+                    <img src=<%=post.logo%> >
+                </a>
+            </div>
+        <% }) %>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <ul>
+                <li><a href="https://github.com/AlexSteiner30">github</a></li>
+                <li><a href="#">discord</a></li>
+                <li><a href="mailto:alex@alexsteiner.dev">email</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
