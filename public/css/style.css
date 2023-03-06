@@ -11,3 +11,30 @@ body{
     width: 95%;
     height: 95%;
 }
+
+.mla-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+cite{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+    margin-bottom: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
