@@ -24,12 +24,12 @@ body{
 
 cite{
     display: block;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 
     margin-bottom: 1%;
 }
@@ -37,4 +37,39 @@ cite{
 a{
     text-decoration: none;
     color: blue;
+}
+
+@media only screen and (max-width: 480px) {
+    .image{    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .mla-title{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 5%;
+    }
+    
+    cite{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 1%;
+
+        margin-bottom: 1%;
+    }
 }
